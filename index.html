@@ -86,7 +86,7 @@
       console.log('Successful login for: ' + response.name);
       console.log(response);
       document.getElementById('status').innerHTML =
-        'Thanks for logging in, ' + response.name + '!';
+        '<p>Thanks for logging in, ' + response.name + '!</p>';
     });
   }
 </script>
@@ -103,11 +103,11 @@
                 <div class="w3-bar-item w3-right title w3-mobile">Forum pasionatów Cthulhu </div>
         </div>
     </header>
-  
+  <div class="w3-container>
 <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 </fb:login-button>
 <div id="status">
 </div>
-
+</div>
 </body>
 </html>
