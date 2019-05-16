@@ -89,9 +89,18 @@
   the FB.login() function when clicked.
 -->
 
+    <header>
+        <div class="w3-bar">
+                <div class="w3-bar-item menu-item w3-mobile" onclick="pushroute('main')">Home</div>
+                <div class="w3-bar-item menu-item w3-mobile">O nas</div>
+                <div class="w3-bar-item menu-item w3-mobile" onclick="pushroute('ttt')">Tic Tac Toe</div>
+                <div class="w3-bar-item menu-item w3-mobile" onclick="test()">Dołącz do bractwa (FB)</div>
+                <div class="w3-bar-item w3-right title w3-mobile">Forum pasionatów Cthulhu </div>
+        </div>
+    </header>
+  
 <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 </fb:login-button>
-
 <div id="status">
 </div>
 
