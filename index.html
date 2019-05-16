@@ -3,10 +3,18 @@
 <head>
 <title>Facebook Login JavaScript Example</title>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
 <body>
 <script>
+  
+  function miau(){
+  
+    window.location.href = "http://karolmitek.cba.pl"
+    
+  }
+  
   // This is called with the results from from FB.getLoginStatus().
   function statusChangeCallback(response) {
     console.log('statusChangeCallback');
@@ -91,10 +99,7 @@
 
     <header>
         <div class="w3-bar">
-                <div class="w3-bar-item menu-item w3-mobile" onclick="pushroute('main')">Home</div>
-                <div class="w3-bar-item menu-item w3-mobile">O nas</div>
-                <div class="w3-bar-item menu-item w3-mobile" onclick="pushroute('ttt')">Tic Tac Toe</div>
-                <div class="w3-bar-item menu-item w3-mobile" onclick="test()">Dołącz do bractwa (FB)</div>
+                <div class="w3-bar-item menu-item w3-mobile" onclick="miau()">Home</div>
                 <div class="w3-bar-item w3-right title w3-mobile">Forum pasionatów Cthulhu </div>
         </div>
     </header>
