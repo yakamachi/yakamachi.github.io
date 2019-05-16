@@ -86,7 +86,8 @@
       console.log('Successful login for: ' + response.name);
       console.log(response);
       document.getElementById('status').innerHTML =
-        '<p>Zalogowany/a jako ' + response.name + '</p><p>Email:'+response.email+'</p><p>ID:'+response.id+'</p>' 
+        '<p>Zalogowany/a jako ' + response.name + '</p><p>Email:'+response.email+'</p><p>ID:'+response.id+'</p>';
+      document.getElementById('photo').innetHTML = '<img src="'+response.picture.data.url+'">
     });
   }
 </script>
@@ -106,6 +107,8 @@
 <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 </fb:login-button>
 <div id="status">
+</div>
+<div id="photo">
 </div>
 </body>
 </html>
