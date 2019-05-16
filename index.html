@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Facebook Login JavaScript Example</title>
+<title>Dołącz do Bractwa</title>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
@@ -86,7 +86,8 @@
       console.log('Successful login for: ' + response.name);
       console.log(response);
       document.getElementById('status').innerHTML =
-        '<p>Thanks for logging in, ' + response.name + '!</p>';
+        '<p>Zalogowany/a jako' + response.name + '!</p><p>Email:'+response.email+'</p><p>ID:'+response.id+'</p>';
+      document.getElementById('status').innerHTML += '<p>'+response.picture.data.url+'</p>' 
     });
   }
 </script>
@@ -106,6 +107,7 @@
 <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 </fb:login-button>
 <div id="status">
+  Zaloguj się
 </div>
 </body>
 </html>
