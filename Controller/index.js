@@ -1,11 +1,7 @@
 var stack = ["main"];
 //setup
-function onload(){
-var sites = document.getElementsByTagName("iframe");
-Array.from(sites).forEach(function(e,i){
-    if (e.id !== "main")
-        e.style.display = "none";
-})
+
+
 
 const getWindowHeight = () => {
     return Math.max(
@@ -16,6 +12,15 @@ const getWindowHeight = () => {
       document.documentElement.clientHeight
     );
   };
+
+function onload(){
+var sites = document.getElementsByTagName("iframe");
+
+
+Array.from(sites).forEach(function(e,i){
+    if (e.id !== "main")
+        e.style.display = "none";
+})
 
 //Array.from(document.getElementsByTagName("div")).forEach(function(A,i){if (i<2 || i>=document.getElementsByTagName("div").length-2) A.style.display="none"});
 
