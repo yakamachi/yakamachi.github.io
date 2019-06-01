@@ -33,7 +33,7 @@ iframeLoaded();
       if(e) {
             // here you can make the height, I delete it first, then I make it again
             e.style.height= "";
-            e.style.height = getWindowHeight;//e.contentWindow.document.body.scrollHeight + "px";
+            e.style.height = 1080//getWindowHeight;//e.contentWindow.document.body.scrollHeight + "px";
       }
       })
   }
@@ -54,7 +54,7 @@ function refreshroute(){
     else
         e.style.display = "";
         console.log("wtf");
-        e.style.height = getWindowHeight;//Math.max(window.innerHeight, root.clientHeight, body.clientHeight);//e.contentWindow.document.body.scrollHeight + "px";
+        e.style.height = 1080//getWindowHeight;//Math.max(window.innerHeight, root.clientHeight, body.clientHeight);//e.contentWindow.document.body.scrollHeight + "px";
 })
 }
 
