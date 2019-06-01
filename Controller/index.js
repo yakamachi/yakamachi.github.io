@@ -3,7 +3,7 @@ var stack = ["main"];
 
 
 
-console.log($(window).height);
+console.log($(window).height());
 function onload(){
 var sites = document.getElementsByTagName("iframe");
 
@@ -24,7 +24,7 @@ iframeLoaded();
       if(e) {
             // here you can make the height, I delete it first, then I make it again
             e.style.height= "";
-            e.style.height = $(window).height;//e.contentWindow.document.body.scrollHeight*10 + "px";
+            e.style.height = $(window).height();//e.contentWindow.document.body.scrollHeight*10 + "px";
       }
       })
   }
@@ -45,7 +45,7 @@ function refreshroute(){
     else
         e.style.display = "";
         console.log("wtf");
-        e.style.height = $(window).height;//e.contentWindow.document.body.scrollHeight*10 + "px";
+        e.style.height = $(window).height();//e.contentWindow.document.body.scrollHeight*10 + "px";
 })
 }
 
