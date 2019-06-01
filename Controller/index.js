@@ -38,6 +38,7 @@ function refreshroute(){
         e.style.display = "none";
     else
         e.style.display = "";
+        console.log("wtf");
         e.style.height = Math.max(window.innerHeight, root.clientHeight, body.clientHeight);//e.contentWindow.document.body.scrollHeight + "px";
 })
 }
