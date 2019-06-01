@@ -3,16 +3,7 @@ var stack = ["main"];
 
 
 
-const getWindowHeight = () => {
-    return Math.max(
-      document.body.scrollHeight,
-      document.documentElement.scrollHeight,
-      document.body.offsetHeight,
-      document.documentElement.offsetHeight,
-      document.documentElement.clientHeight
-    );
-  };
-
+console.log($(window).height);
 function onload(){
 var sites = document.getElementsByTagName("iframe");
 
