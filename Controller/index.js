@@ -28,7 +28,6 @@ iframeLoaded();
 function pushroute(route){
     stack.pop()
     stack.push(route);
-    console.log(stack);
     refreshroute();
 }
 
