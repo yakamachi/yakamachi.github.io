@@ -7,13 +7,13 @@ Array.from(sites).forEach(function(e,i){
         e.style.display = "none";
 })
 
-const getWindowWidth = () => {
+const getWindowHeight = () => {
     return Math.max(
-      document.body.scrollWidth,
-      document.documentElement.scrollWidth,
-      document.body.offsetWidth,
-      document.documentElement.offsetWidth,
-      document.documentElement.clientWidth
+      document.body.scrollHeight,
+      document.documentElement.scrollHeight,
+      document.body.offsetHeight,
+      document.documentElement.offsetHeight,
+      document.documentElement.clientHeight
     );
   };
 
@@ -28,7 +28,7 @@ iframeLoaded();
       if(e) {
             // here you can make the height, I delete it first, then I make it again
             e.style.height= "";
-            e.style.height = getWindowWidth;//e.contentWindow.document.body.scrollHeight + "px";
+            e.style.height = getWindowHeight;//e.contentWindow.document.body.scrollHeight + "px";
       }
       })
   }
@@ -49,7 +49,7 @@ function refreshroute(){
     else
         e.style.display = "";
         console.log("wtf");
-        e.style.height = getWindowWidth;//Math.max(window.innerHeight, root.clientHeight, body.clientHeight);//e.contentWindow.document.body.scrollHeight + "px";
+        e.style.height = getWindowHeight;//Math.max(window.innerHeight, root.clientHeight, body.clientHeight);//e.contentWindow.document.body.scrollHeight + "px";
 })
 }
 
