@@ -44,7 +44,6 @@ function refreshroute(){
         e.style.display = "none";
     else
         e.style.display = "";
-        console.log("wtf");
         e.style.height = $(window).height()+"px";//e.contentWindow.document.body.scrollHeight*10 + "px";
 })
 }
