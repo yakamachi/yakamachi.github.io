@@ -23,3 +23,6 @@
 .cl_dblue{
     color: #05386B;
 }
+input:invalid {
+    border: 2px red;
+  }

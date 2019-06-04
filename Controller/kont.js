@@ -1,6 +1,8 @@
 function validateMe(){
 
-    var contact;
+
+
+    var contact = new ContactMe();
 
     var [first, last, email, phone, message] = contact;
 
@@ -14,4 +16,6 @@ function validateMe(){
     };
 
     validate({from: email},constraints);
+
+    return false;
 }
