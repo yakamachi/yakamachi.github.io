@@ -1,3 +1,23 @@
+
+window.addEventListener("load", function () {
+    window.cookieconsent.initialise({
+        "palette": {
+            "popup": {
+                "background": "#1d8a8a"
+            },
+            "button": {
+                "background": "#62ffaa"
+            }
+        },
+        "content": {
+            "message": "Strona wykorzystuje pliki Cookies.",
+            "dismiss": "Zrozumiałem",
+            "link": "Dowiedz się więcej"
+        }
+    })
+});
+
+
 var stack = ["main"];
 //setup
 
