@@ -1,9 +1,6 @@
 var stack = ["main"];
 //setup
 
-
-
-console.log($(window).height());
 function onload(){
 var sites = document.getElementsByTagName("iframe");
 
