@@ -20,9 +20,6 @@ window.addEventListener("load",function() {
 
 function validateMe(contact){
 
-    console.log(contact.first)
-    console.log(contact.last)
-
     var constraints = {
         from: {
             email: true
@@ -31,7 +28,7 @@ function validateMe(contact){
 
     var check = validate({from: contact.email},constraints);
 
-    if(check[0] === "From is not a valid email")
+    if(check[1] === "From is not a valid email")
         return false;
     else
         return true;
