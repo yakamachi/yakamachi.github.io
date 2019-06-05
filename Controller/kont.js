@@ -6,7 +6,7 @@ window.addEventListener("load",function() {
         b = document.getElementById('last').value
         c = document.getElementById('email').value
         d = document.getElementById('phone').value
-        e = document.getElementById('text').value
+        e = document.getElementById('message').value
         
         contact = new ContactMe(a,b,c,d,e)
 
@@ -19,10 +19,8 @@ window.addEventListener("load",function() {
 
 function validateMe(contact){
 
-    var [first, last, email, phone, message] = contact;
-
-    console.log(first)
-    console.log(last)
+    console.log(contact.first)
+    console.log(contact.last)
 
     var constraints = {
         from: {
