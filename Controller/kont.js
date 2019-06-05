@@ -13,8 +13,8 @@ window.addEventListener("load",function() {
         var yup = validateMe(contact)
 
       // Should be triggered on form submit
-      if(yup[0] === "From is not a valid email")
-      alert('hi');
+      if(yup === false)
+        alert('hi');
     });
   });
 
@@ -31,7 +31,8 @@ function validateMe(contact){
 
     var check = validate({from: contact.email},constraints);
 
-    console.log(check);
-
-    return false;
+    if(check[0] === "From is not a valid email")
+        return false;
+    else
+        return true;
 }
