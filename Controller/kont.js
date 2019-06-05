@@ -2,17 +2,22 @@ window.addEventListener("load",function() {
     document.getElementById('my-form').addEventListener("submit",function(e) {
       e.preventDefault(); // before the code
       /* do what you want with the form */
-  
+        a = document.getElementById('first').value
+        b = document.getElementById('last').value
+        c = document.getElementById('email').value
+        d = document.getElementById('phone').value
+        e = document.getElementById('text').value
+        
+        contact = new ContactMe(a,b,c,d,e)
+
+        validateMe(contact)
+
       // Should be triggered on form submit
       alert('hi');
     });
   });
 
-function validateMe(){
-
-
-
-    var contact = new ContactMe();
+function validateMe(contact){
 
     var [first, last, email, phone, message] = contact;
 
