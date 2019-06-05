@@ -28,7 +28,9 @@ function validateMe(contact){
         }
     };
 
-    validate({from: email},constraints);
+    var check = validate({from: email},constraints);
+
+    console.log(check);
 
     return false;
 }
