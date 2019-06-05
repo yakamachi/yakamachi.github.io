@@ -33,7 +33,7 @@ function validateMe(contact) {
         first: {
             format: {
 
-                pattern: "[a-Z]+",
+                pattern: "[a-zA-Z]+",
                 flags: "i",
                 message: "Niepoprawne imię"
             }
@@ -41,7 +41,7 @@ function validateMe(contact) {
         last: {
             format: {
 
-                pattern: "[a-Z]+",
+                pattern: "[a-zA-Z]+",
                 flags: "i",
                 message: "Niepoprawne nazwisko"
             }
