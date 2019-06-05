@@ -10,9 +10,10 @@ window.addEventListener("load",function() {
         
         contact = new ContactMe(a,b,c,d,e)
 
-        validateMe(contact)
+        var yup = validateMe(contact)
 
       // Should be triggered on form submit
+      if(yup[0] === "From is not a valid email")
       alert('hi');
     });
   });
@@ -28,7 +29,7 @@ function validateMe(contact){
         }
     };
 
-    var check = validate({from: email},constraints);
+    var check = validate({from: contact.email},constraints);
 
     console.log(check);
 
