@@ -20,13 +20,22 @@ window.addEventListener("load",function() {
 
 function validateMe(contact){
 
+    a = contact.first
+    b = contact.last
+    c = contact.email
+    d = contact.phone
+    e = contact.message
+
+
     var constraints = {
         from: {
             email: true
         }
     };
 
-    var check = validate({from: contact.email},constraints);
+    var check = validate({from: e},constraints);
+
+    console.log(check)
 
     if(check[1] === "From is not a valid email")
         return false;
