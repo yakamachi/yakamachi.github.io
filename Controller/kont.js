@@ -15,7 +15,7 @@ window.addEventListener("load", function () {
         // Should be triggered on form submit
         if (yup === false)
             alert('Formularz posiada błędy, popraw go proszę');
-        else{
+        else {
             alert('Formularz został wysłany, dziękuję!')
         }
     });
@@ -29,16 +29,38 @@ function validateMe(contact) {
     d = contact.phone
     e = contact.message
 
-
     var constraints = {
+        first: {
+            format: {
+
+                pattern: "[a-Z]+",
+                flags: "i",
+                message: "Niepoprawne imię"
+            }
+        },
+        last: {
+            format: {
+
+                pattern: "[a-Z]+",
+                flags: "i",
+                message: "Niepoprawne nazwisko"
+            }
+        },
         email: {
             email: true
+        },
+        phone: {
+            format: {
+                pattern: "[0-9]{3}-[0-9]{3}-[0-9]{3}",
+                flags: "i",
+                message: "Niepoprawny numer"
+            }
         }
     };
 
-    var errors = validate(c, constraints);
+    var errore = validate(contact, constraints);
 
-    if (errors)
+    if (errore)
         return false;
     else
         return true;
