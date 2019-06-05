@@ -1,3 +1,14 @@
+.route {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-width: 0px;
+    border-style: none;
+    border-image: none;
+    overflow: auto;
+    flex-direction: column;
+    flex-grow: 1;
+}
 .verdana{
     font-family: 'Verdana'; 
 }
