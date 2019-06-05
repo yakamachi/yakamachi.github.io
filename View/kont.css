@@ -5,6 +5,12 @@
     color: #EDF5E1;
     font-size: 45pt;
 }
+@media only screen and (max-width: 700px){
+    .main_text
+    {
+        font-size: 24pt;
+    }
+}
 .cl_white{
     color: #EDF5E1;
 }
@@ -17,8 +23,20 @@
 .submain_text{
     font-size: 33pt;
 }
+@media only screen and (max-width: 700px){
+    .submain_text
+    {
+        font-size: 18pt;
+    }
+}
 .sub_text{
     font-size: 28pt;
+}
+@media only screen and (max-width: 700px){
+    .sub_text
+    {
+        font-size: 14pt;
+    }
 }
 .cl_dblue{
     color: #05386B;

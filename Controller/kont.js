@@ -16,18 +16,13 @@ window.addEventListener("load", function () {
         if (yup === false)
             alert('Formularz posiada błędy, popraw go proszę');
         else {
-            alert('Formularz został wysłany, dziękuję!')
+            alert('Formularz został wysłany, dziękuję!');
+            document.getElementById("my-form").submit();
         }
     });
 });
 
 function validateMe(contact) {
-
-    a = contact.first
-    b = contact.last
-    c = contact.email
-    d = contact.phone
-    e = contact.message
 
     var constraints = {
         first: {

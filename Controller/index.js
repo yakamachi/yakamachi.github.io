@@ -24,7 +24,7 @@ iframeLoaded();
       if(e) {
             // here you can make the height, I delete it first, then I make it again
             e.style.height= "";
-            e.style.height = $(window).height()+"px";//e.contentWindow.document.body.scrollHeight*10 + "px";
+            e.style.height = ($(window).height() - $("#menu").height())+"px";//e.contentWindow.document.body.scrollHeight*10 + "px";
       }
       })
   }
@@ -44,7 +44,7 @@ function refreshroute(){
         e.style.display = "none";
     else
         e.style.display = "";
-        e.style.height = $(window).height()+"px";//e.contentWindow.document.body.scrollHeight*10 + "px";
+        e.style.height = ($(window).height() - $("#menu").height())+"px";//e.contentWindow.document.body.scrollHeight*10 + "px";
 })
 }
 
