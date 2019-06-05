@@ -33,11 +33,9 @@ function validateMe(contact){
         }
     };
 
-    var check = validate({from: e},constraints);
+    var errors = validate({from: e},constraints);
 
-    console.log(check)
-
-    if(check[1] === "From is not a valid email")
+    if(errors)
         return false;
     else
         return true;
